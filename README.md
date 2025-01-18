@@ -251,6 +251,41 @@ const LoginSchema = Yup.object().shape({
 }
 ```
 
+## Multi step form
+
+To create a multi step form just add multiple templates to the template prop array
+
+```jsx
+const step1: Template = {
+    config: [
+      {
+        type: "textfield",
+        name: "name",
+        fieldProps() {
+          return { variant: "filled" };
+        },
+      },
+    ],
+  };
+
+  const step2: Template = {
+    config: [
+      {
+        type: "switch",
+        name: "boolean",
+      },
+    ],
+  };
+
+  return (
+    <FormBuilder
+      template={[step1, step2]}
+      onSubmit={(data) => console.log(data)}
+    />
+  );
+}
+```
+
 ## Contributing
 
 We welcome contributions! If you have suggestions or encounter issues, please open an [issue](https://github.com/your-repo/mui-form-builder/issues) or submit a pull request.
