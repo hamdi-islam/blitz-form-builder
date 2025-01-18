@@ -1,5 +1,5 @@
 import Button from "@mui/material/Button";
-import { FormBuilder, Template } from "react-form-builder";
+import { FormBuilder, Template } from "blitz-form-builder";
 import * as Yup from "yup";
 
 function App() {

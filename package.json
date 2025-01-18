@@ -6,6 +6,7 @@
     "form",
     "builder",
     "react-form-builder",
+    "blitz-form-builder",
     "react-hook-form",
     "react"
   ],

@@ -33,10 +33,9 @@ yarn add @mui/material react-hook-form
 Here’s a basic example to get started:
 
 ```jsx
-import { FormBuilder, Template } from "react-form-builder";
+import { FormBuilder, Template } from "blitz-form-builder";
 
 function App() {
-
   const template: Template = {
     config: [
       {
@@ -112,9 +111,9 @@ To handle your fields based on your form's state you can access your state like 
 ```jsx
 {
     type: "textfield",
-    label: "Email address",   
+    label: "Email address",
     name: "email",
-    fieldProps(props) {        
+    fieldProps(props) {
     const { watch } = props;
     const firstname = watch("firstname");
       if (firstname === "jack") {
@@ -168,7 +167,6 @@ const LoginSchema = Yup.object().shape({
 `shouldUseNativeValidation`: Use browser built-in form constraint API.
 
 `shouldUnregister`: Enable and disable input unregister after unmount.
-
 
 ```jsx
  <FormBuilder
@@ -243,7 +241,7 @@ const LoginSchema = Yup.object().shape({
           },
           mode: "onBlur",
         }}
-        onSubmit={(data) => 
+        onSubmit={(data) =>
             console.log(data)
             // make your api call
         }
@@ -252,7 +250,6 @@ const LoginSchema = Yup.object().shape({
   );
 }
 ```
-
 
 ## Contributing
 
@@ -265,4 +262,3 @@ We welcome contributions! If you have suggestions or encounter issues, please op
 ---
 
 Happy form building! 🚀
-
