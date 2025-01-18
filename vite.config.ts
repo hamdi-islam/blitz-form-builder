@@ -9,9 +9,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "lib/main.ts"),
-      name: "mui-form-builder",
+      name: "blitz-form-builder",
       // the proper extensions will be added
-      fileName: "mui-form-builder",
+      fileName: "blitz-form-builder",
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
