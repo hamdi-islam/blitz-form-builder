@@ -1,6 +1,7 @@
 {
   "name": "blitz-form-builder",
-  "version": "0.0.8",
+  "author": "Hamdi Islam",
+  "version": "0.0.9",
   "keywords": [
     "mui",
     "form",
