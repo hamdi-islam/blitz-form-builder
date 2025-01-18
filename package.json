@@ -1,6 +1,7 @@
 {
   "name": "blitz-form-builder",
-  "version": "0.0.5",
+  "author": "Hamdi Islam",
+  "version": "0.0.9",
   "keywords": [
     "mui",
     "form",
@@ -22,6 +23,10 @@
       "import": "./dist/blitz-form-builder.js",
       "require": "./dist/blitz-form-builder.umd.cjs"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hamdi-islam/blitz-form-builder.git"
   },
   "scripts": {
     "prebuild": "rm -rf dist",
