@@ -1,7 +1,7 @@
 {
   "name": "blitz-form-builder",
   "author": "Hamdi Islam",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "keywords": [
     "mui",
     "form",
@@ -34,7 +34,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "publish": "yarn build && yarn publish"
+    "prepublish": "yarn build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
