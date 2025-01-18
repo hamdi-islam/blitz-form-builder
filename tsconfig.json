@@ -6,7 +6,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "paths": {
-      "react-form-builder": ["./lib/main.ts"]
+      "mui-form-builder": ["./lib/main.ts"]
     },
 
     /* Bundler mode */

@@ -9,9 +9,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "lib/main.ts"),
-      name: "react-form-builder",
+      name: "mui-form-builder",
       // the proper extensions will be added
-      fileName: "react-form-builder",
+      fileName: "mui-form-builder",
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
