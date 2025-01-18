@@ -1,11 +1,12 @@
 {
-  "name": "mui-form-builder",
-  "version": "0.0.1",
+  "name": "blitz-form-builder",
+  "version": "0.0.5",
   "keywords": [
     "mui",
     "form",
     "builder",
     "react-form-builder",
+    "blitz-form-builder",
     "react-hook-form",
     "react"
   ],
@@ -14,12 +15,12 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/main.umd.cjs",
-  "module": "./dist/main.js",
+  "main": "./dist/blitz-form-builder.umd.cjs",
+  "module": "./dist/blitz-form-builder.js",
   "exports": {
     ".": {
-      "import": "./dist/main.js",
-      "require": "./dist/main.umd.cjs"
+      "import": "./dist/blitz-form-builder.js",
+      "require": "./dist/blitz-form-builder.umd.cjs"
     }
   },
   "scripts": {
