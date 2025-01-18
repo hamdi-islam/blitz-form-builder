@@ -1,6 +1,5 @@
 {
   "name": "mui-form-builder",
-  "private": true,
   "version": "0.0.1",
   "keywords": [
     "mui",
@@ -10,6 +9,7 @@
     "react-hook-form",
     "react"
   ],
+  "description": "A simple form builder to create and manage complex forms",
   "type": "module",
   "files": [
     "dist"
@@ -28,7 +28,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepublish": "yarn build"
+    "publish": "yarn build && yarn publish"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
