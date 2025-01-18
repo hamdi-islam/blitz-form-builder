@@ -20,14 +20,6 @@ npm install mui-form-builder
 yarn add mui-form-builder
 ```
 
-You also need to install the peer dependencies:
-
-```bash
-npm install @mui/material react-hook-form
-# or
-yarn add @mui/material react-hook-form
-```
-
 ## Quick Start
 
 Here’s a basic example to get started:
