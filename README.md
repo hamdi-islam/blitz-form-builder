@@ -1,6 +1,6 @@
-# mui-form-builder
+# blitz-form-builder
 
-`mui-form-builder` is a React package built on top of [Material-UI](https://mui.com/) and [react-hook-form](https://react-hook-form.com/). It simplifies the process of creating **single & multi step forms**, making it up to 20 times faster to build and manage complex forms in your React applications.
+`blitz-form-builder` is a React package built on top of [Material-UI](https://mui.com/) and [react-hook-form](https://react-hook-form.com/). It simplifies the process of creating **single & multi step forms**, making it up to 20 times faster to build and manage complex forms in your React applications.
 
 ## Features
 
@@ -15,9 +15,9 @@
 Install the package via npm or yarn:
 
 ```bash
-npm install mui-form-builder
+npm install blitz-form-builder
 # or
-yarn add mui-form-builder
+yarn add blitz-form-builder
 ```
 
 You also need to install the peer dependencies:
@@ -36,7 +36,6 @@ Here’s a basic example to get started:
 import { FormBuilder, Template } from "react-form-builder";
 
 function App() {
-
   const template: Template = {
     config: [
       {
@@ -74,7 +73,7 @@ export default App;
 
 The `config` object allows you to define the form structure and behavior:
 
-- `fields`: An array of field definitions, currently mui-form-builder supports ("`textfield`"
+- `fields`: An array of field definitions, currently blitz-form-builder supports ("`textfield`"
   "`date`",
   "`select`",
   "`radio`",
@@ -112,9 +111,9 @@ To handle your fields based on your form's state you can access your state like 
 ```jsx
 {
     type: "textfield",
-    label: "Email address",   
+    label: "Email address",
     name: "email",
-    fieldProps(props) {        
+    fieldProps(props) {
     const { watch } = props;
     const firstname = watch("firstname");
       if (firstname === "jack") {
@@ -126,7 +125,7 @@ To handle your fields based on your form's state you can access your state like 
 
 ## Form builder props
 
-`mui-form-builder` extends the `html` form attributes in addition to those important ones:
+`blitz-form-builder` extends the `html` form attributes in addition to those important ones:
 
 - **`schema validation`**: We also support schema-based form validation with `Yup`, `Zod` , `Superstruct` & `Joi`, where you can pass your schema to useForm as an optional config. It will validate your input data against the schema and return with either errors or a valid result.
 
@@ -168,7 +167,6 @@ const LoginSchema = Yup.object().shape({
 `shouldUseNativeValidation`: Use browser built-in form constraint API.
 
 `shouldUnregister`: Enable and disable input unregister after unmount.
-
 
 ```jsx
  <FormBuilder
@@ -243,7 +241,7 @@ const LoginSchema = Yup.object().shape({
           },
           mode: "onBlur",
         }}
-        onSubmit={(data) => 
+        onSubmit={(data) =>
             console.log(data)
             // make your api call
         }
@@ -253,16 +251,14 @@ const LoginSchema = Yup.object().shape({
 }
 ```
 
-
 ## Contributing
 
-We welcome contributions! If you have suggestions or encounter issues, please open an [issue](https://github.com/your-repo/mui-form-builder/issues) or submit a pull request.
+We welcome contributions! If you have suggestions or encounter issues, please open an [issue](https://github.com/your-repo/blitz-form-builder/issues) or submit a pull request.
 
 ## License
 
-`mui-form-builder` is licensed under the MIT License.
+`blitz-form-builder` is licensed under the MIT License.
 
 ---
 
 Happy form building! 🚀
-
